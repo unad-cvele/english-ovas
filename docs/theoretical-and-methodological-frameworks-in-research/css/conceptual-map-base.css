@@ -1,0 +1,39 @@
+.conceptual-map-base__main-row {
+  background-color: #4b4da8;
+  color: #fff;
+  font-weight: bold;
+  margin: 20px 0 0 0;
+  padding: 20px;
+  border-radius: 10px;
+}
+.conceptual-map-base__main-row-2 {
+  background-color: #39a826;
+}
+.conceptual-map-base__ul {
+  border-left: #31d9df solid 3px;
+  padding: 0 0 0 0;
+  margin: 0 0 70px 10px;
+}
+.conceptual-map-base li {
+  padding: 0 0 0 10px;
+  list-style: none;
+  margin: 0 0 20px 0;
+  position: relative;
+}
+.conceptual-map-base li::before {
+  content: "";
+  background-color: #31d9df;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 10px;
+}
+.conceptual-map-base__secondary-row {
+  position: relative;
+  top: 35px;
+  border: #31d9df solid 3px;
+  background-color: #efefef;
+  padding: 20px;
+  border-radius: 10px;
+}

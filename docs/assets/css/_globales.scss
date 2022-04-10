@@ -1,0 +1,30 @@
+/*
+1. Posicionamiento
+2. Modelo caja (Box Model)
+3. Tipografía
+4. Temas visuales
+5. Otros o miscelaneos
+*/
+:root{
+    /* Colores*/
+    --background-principal-cards: #004669; 
+    --font-color-principal-cards: #fff;
+    
+    --section-light-grey:rgba(229, 229, 229, 0.6);
+    --unad-blue:#004669;
+    --unad-blue--alpha:rgba(0, 70, 105, 0.8);
+    --unad-grey--dark:#B4B2B2;
+    --unad-orange:#F47A1E;
+    --unad-yellow:#F2B52A;
+    --unad-yellow--alpha:rgba(242, 182, 42, 0.8);
+    --unad-white:#fff;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+    font-family: sans-serif;
+}

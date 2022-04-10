@@ -1,0 +1,23 @@
+mixin ovas_descripcion(ovas_descripcion_titulo,ovas_description_link)
+    .section-ovas__image
+        img(src="./assets/test/ova-muestra-1.png", alt=ovas_descripcion_titulo)
+    .section-ovas__info
+        h3 #{ovas_descripcion_titulo}
+        .section-ovas__description
+            |Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit sequi repudiandae voluptatem.
+        .section-general__button-show-more-container
+            a(href=ovas_description_link).section-general__button-show-more
+                |Ver más
+
+mixin ovas(ovas_titulo,ovas_link,ovas_startClass)
+    if ovas_startClass
+        //OVAS ocultar
+        .section-ovas__card.section-ovas__card--hide-right
+            +ovas_descripcion(ovas_titulo,ovas_link)
+    else 
+        .section-ovas__card
+            +ovas_descripcion(ovas_titulo,ovas_link)
+        
+            
+
+

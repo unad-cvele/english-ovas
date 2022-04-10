@@ -1,0 +1,84 @@
+@keyframes research-ethics-img-1 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.research-ethics {
+  background-color: #EFEBCF;
+  padding: 10px;
+}
+.research-ethics__container {
+  border: 2px dashed #582016;
+  color: #582016;
+  padding: 10px;
+  margin: 10px;
+}
+.research-ethics__container h3 {
+  padding: 10px 0;
+}
+.research-ethics__imagen {
+  background-color: brown;
+  padding: 20px;
+  max-width: 180px;
+  margin: 10px auto;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.research-ethics__imagen img {
+  max-width: 130px;
+  animation: research-ethics-img-1;
+  animation-duration: 3s;
+  transform: rotate(-10deg);
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color: white;
+}
+.research-ethics__container:nth-child(1) .research-ethics__imagen {
+  background-color: #377C87;
+  border: 3px solid #EEA94E;
+}
+.research-ethics__container:nth-child(even) {
+  border-color: #EEA94E;
+}
+.research-ethics__container:nth-child(even) .research-ethics__imagen {
+  background-color: #EEA94E;
+}
+.research-ethics__container:nth-child(even) .research-ethics__imagen img {
+  transform: rotate(10deg);
+  animation: research-ethics-img-1;
+  animation-duration: 6s;
+}
+
+@media (min-width: 1000px) {
+  .research-ethics {
+    padding: 20px 80px;
+  }
+  .research-ethics__container {
+    padding: 20px;
+    position: relative;
+    min-height: 300px;
+    margin: 50px 0;
+  }
+  .research-ethics__imagen {
+    position: absolute;
+    min-height: 220px;
+  }
+  .research-ethics__imagen img {
+    max-height: 130px;
+  }
+  .research-ethics__container:nth-child(odd) .research-ethics__imagen {
+    left: -60px;
+    transform: rotate(2deg);
+  }
+  .research-ethics__container:nth-child(odd) .research-ethics__info {
+    padding: 20px 0 0 140px;
+  }
+  .research-ethics__container:nth-child(even) .research-ethics__imagen {
+    right: -60px;
+    transform: rotate(-2deg);
+  }
+  .research-ethics__container:nth-child(even) .research-ethics__info {
+    padding: 20px 140px 0 0;
+  }
+}

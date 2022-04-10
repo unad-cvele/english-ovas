@@ -1,0 +1,38 @@
+.structuralAnalysisMethod{
+    background-color: var(--unad-four);
+
+}
+
+.structuralAnalysisMethod h3{
+    color: var(--unad-two);
+    text-align: center;
+}
+
+.structuralAnalysisMethod .container-acordeon{
+    
+    border: 2px solid #32792c;
+    background-color: var(--unad-white);
+    margin: 10px 0;
+    
+}
+.structuralAnalysisMethod .container-acordeon:nth-last-child(){
+    margin: 10px 0 0 0;
+}
+.structuralAnalysisMethod .main-container-acordeon{
+    border-bottom: 0;
+}
+
+.structuralAnalysisMethod .container-acordeon.show{
+    border: 3px solid  #32792c;
+    box-shadow: inset 0 0 22px -2px #32792c;
+}
+.structuralAnalysisMethod .btn-acordeon{
+    color:#43943d ;
+}
+
+.structuralAnalysisMethod__main_description{
+    background-color: var(--unad-white);
+    padding: 10px;
+    
+    border: 1px solid  #32792c;
+}

@@ -1,0 +1,54 @@
+
+
+@keyframes imagen-simple-Move {
+    from {
+        transform: rotate3d(4, 1, -2, 300deg);
+    }
+  
+    to {
+        
+        transform: rotate3d(4, 1, -2, 375deg);
+    }
+  }
+
+.table_simple{
+    background-color: #EFEBCF;
+    padding: 20px;
+    &__imagen{
+        border: dotted 2px #72af9a;
+        padding: 20px;
+        text-align: center;
+        margin: 10px;
+        img{
+            height: 360px;
+            animation-duration: 2s;
+            animation-name: imagen-simple-Move;
+            transform: rotate3d(4, 1, -2, 375deg);
+            transition: 2s;
+        }
+        img:hover{
+            transform: rotate3d(4, 1, -2, 300deg);
+        }
+
+    }
+    &__descripcion{
+        border: dotted 2px #72af9a;
+        color: #333;
+        line-height: 1.6rem;
+        padding: 20px;
+        margin: 10px;
+    }
+}
+
+@media (min-width: 1000px){
+    .table_simple{
+        display: flex;
+        
+        &__imagen{
+            width: 50%;
+        }
+        &__descripcion{
+            width: 50%;
+        }
+    }
+}

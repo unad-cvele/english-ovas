@@ -1,0 +1,34 @@
+.table_simple{
+    background-color: #EFEBCF;
+    padding: 20px;
+    &__imagen{
+        border: dotted 2px #72af9a;
+        padding: 20px;
+        text-align: center;
+        margin: 10px;
+        img{
+            height: 360px;
+        }
+
+    }
+    &__descripcion{
+        border: dotted 2px #72af9a;
+        color: #333;
+        line-height: 1.6rem;
+        padding: 20px;
+        margin: 10px;
+    }
+}
+
+@media (min-width: 1000px){
+    .table_simple{
+        display: flex;
+        
+        &__imagen{
+            width: 50%;
+        }
+        &__descripcion{
+            width: 50%;
+        }
+    }
+}

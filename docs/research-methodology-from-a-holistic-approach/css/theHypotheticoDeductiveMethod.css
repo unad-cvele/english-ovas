@@ -1,0 +1,38 @@
+.theHypotheticoDeductiveMethod{
+    background-color: var(--unad-three);
+
+}
+
+.theHypotheticoDeductiveMethod h3{
+    color: var(--unad-two);
+    text-align: center;
+}
+
+.theHypotheticoDeductiveMethod .container-acordeon{
+    
+    border: 2px solid var(--unad-yellow);
+    background-color: var(--unad-white);
+    margin: 10px 0;
+    border-radius: 10px;
+}
+.theHypotheticoDeductiveMethod .container-acordeon:nth-last-child(){
+    margin: 10px 0 0 0;
+}
+.theHypotheticoDeductiveMethod .main-container-acordeon{
+    border-bottom: 0;
+}
+
+.theHypotheticoDeductiveMethod .container-acordeon.show{
+    border: 3px solid  var(--unad-yellow);
+    box-shadow: inset 0 0 22px -2px var(--unad-yellow);
+}
+.theHypotheticoDeductiveMethod .btn-acordeon{
+    color:var(--unad-three) ;
+}
+
+.theHypotheticoDeductiveMethod__main_description{
+    background-color: var(--unad-white);
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid  var(--unad-yellow);
+}

@@ -1,0 +1,31 @@
+.section-principal{
+
+    height: 80px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__cvele-button{
+        background: var(--unad-orange);
+        box-shadow: 0px 4px 12px rgba(35, 54, 109, 0.3);
+        border-radius: 40px;
+      
+        color: var(--font-color-principal-cards);
+        padding: 10px 15px;
+        display: inline-block;
+        text-align: center;
+        text-decoration: none;
+        font-size: 1.2rem;
+    
+    }
+    &__button-of-nav{
+        position: absolute;
+        display: block;
+        height: 30px;
+        width: 30px;
+        background-image: url('../icons/mani-menu.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        right: 10px ;
+    }
+
+}

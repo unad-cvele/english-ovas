@@ -1,0 +1,37 @@
+.conceptual-map--quantitativeData{
+    &__ul--primary{
+        margin: 0 0 35px 10px;
+    }
+    &__ul--secondary{
+        margin: 0 0 70px 40px;
+    }
+    h3{
+        background-color: #53a84b;
+        color: white;
+        padding: 10px;
+        position: relative;
+        top: -33px;
+        left: -28px;
+        width: 90%;
+
+    }
+
+}
+
+
+@media (min-width: 1000px)  {
+    .conceptual-map--quantitativeData{
+        &__ul--primary{
+            margin: 0 0 35px 10px;
+        }
+        &__ul--secondary{
+            margin: 0 0 70px 70px;
+        }
+        h3{
+            
+            width: 50%;
+    
+        }
+    
+    }
+}

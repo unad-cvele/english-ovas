@@ -1,0 +1,14 @@
+.section-single-video{
+    padding: 20px;
+    video{
+        background-color: var(--unad-white);
+        border-radius: 10px;
+        width: 100%;
+        box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.5);
+        @include media(desktop-m){
+            width: 1120px;
+            margin: 0 auto;
+            display: block;
+        }
+    }
+}

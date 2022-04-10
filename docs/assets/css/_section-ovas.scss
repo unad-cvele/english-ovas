@@ -1,0 +1,78 @@
+.section-ovas{
+    background-color: var(--section-light-grey);
+    &__description{
+        color: var(--unad-blue);
+        font-size: 1.2rem;
+        font-weight: 400;
+        line-height: 1.8rem;
+        @include media(tablet){
+            font-size: 1.4rem;
+            line-height: 2rem;
+        }
+    }
+    &__card{
+        background-color: var(--unad-white);
+        border-radius: 10px;
+        margin: 60px 5%;
+        overflow: hidden;
+        box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.5);
+        transition: 1s;
+        min-width: 320px;
+        scroll-snap-align: center;
+        @include media(tablet){
+            padding: 20px;
+        }
+        @include media(desktop-m){
+            margin: 40px 3.3%;
+        }
+    }
+    
+    &__image{
+        float: left;
+        padding: 0 20px 0 0 ;
+        @include media(tablet){
+            padding: 0;
+            float: none;
+            height: 200px;
+            overflow: hidden;
+            
+            border-radius: 10px;
+        }
+    }
+    &__image img{
+        @include media(tablet){
+            width: 100%;
+        }
+    }
+    
+    &__indicator{
+        background-color: var(--unad-white);
+        border:1px solid #ccc;
+        border-radius: 8px;
+        width: 20px;
+        height: 7px;
+        margin: 5px;
+        transition: 1s;
+    }
+    &__indicator--active{
+        background-color: var(--unad-blue);
+    }
+    &__indicators{
+        display: flex;
+        padding: 20px 0;
+        justify-content: center;
+        align-items: center;
+    }
+    &__info{
+        padding: 0 10px 0 0;
+    }
+    &__info h3{
+        color: var(--unad-blue);
+        font-size: 1.6rem;
+        text-align: left;
+        padding: 20px 0;
+        @include media(tablet){
+            text-align: center;
+        }
+    }
+}

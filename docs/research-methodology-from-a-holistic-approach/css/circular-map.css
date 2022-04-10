@@ -1,0 +1,90 @@
+.circular-map__container {
+  background-color: white;
+  border: #404dff solid 3px;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 30px 0;
+}
+.circular-map__container-title {
+  background-color: #404dff;
+  color: white;
+  padding: 10px;
+  margin: 10px 0;
+  position: relative;
+  top: -40px;
+  left: -20px;
+}
+.circular-map__container-2 {
+  border: #27be6e solid 3px;
+}
+.circular-map__container-2 .circular-map__container-title {
+  background-color: #27be6e;
+}
+.circular-map__container-3 {
+  border: #4c9510 solid 3px;
+}
+.circular-map__container-3 .circular-map__container-title {
+  background-color: #4c9510;
+}
+.circular-map__container-4 {
+  border: #16a329 solid 3px;
+}
+.circular-map__container-4 .circular-map__container-title {
+  background-color: #16a329;
+}
+
+@media (min-width: 1000px) {
+  .circular-map__row {
+    position: relative;
+    display: flex;
+    padding: 0 0 0 0;
+  }
+  .circular-map__container {
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 20px 20px 150px 20px;
+    margin: 30px 10px;
+  }
+  .circular-map__container-title {
+    position: absolute;
+    left: 50%;
+    margin: 0;
+    top: auto;
+    bottom: 0;
+    height: 180px;
+    width: 180px;
+  }
+  .circular-map__container-1 .circular-map__container-title {
+    left: calc(50% - 180px);
+    border-radius: 100% 0 0 0;
+  }
+  .circular-map__container-1 .circular-map__container-title h3 {
+    margin: 100px 0 0 30px;
+  }
+  .circular-map__container-2 .circular-map__container-title {
+    border-radius: 0 100% 0 0;
+  }
+  .circular-map__container-2 .circular-map__container-title h3 {
+    margin: 100px 30px 0 0;
+  }
+  .circular-map__container-3, .circular-map__container-4 {
+    padding: 150px 20px 20px 20px;
+  }
+  .circular-map__container-3 .circular-map__container-title {
+    top: 0;
+    bottom: auto;
+    border-radius: 0 0 0 100%;
+    left: calc(50% - 180px);
+  }
+  .circular-map__container-3 .circular-map__container-title h3 {
+    margin: 20px 0 0 30px;
+  }
+  .circular-map__container-4 .circular-map__container-title {
+    top: 0;
+    bottom: auto;
+    border-radius: 0 0 100% 0;
+  }
+  .circular-map__container-4 .circular-map__container-title h3 {
+    margin: 20px 30px 0 0;
+  }
+}

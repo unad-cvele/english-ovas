@@ -1,0 +1,76 @@
+
+  img.bombillo{
+    animation-duration: 2s;
+    animation-name: lampMove;
+    animation-iteration-count: infinite;
+  animation-direction: alternate;
+  height: 235px;
+}
+  
+  @keyframes lampMove {
+    from {
+      opacity:.2;
+      width: 180px;
+    }
+  
+    to {
+        width: 200px;
+        opacity: 1;
+    }
+  }
+
+.grid-infographic{
+    background-color: #fff2cc;
+    font-size: 1.1rem;
+    border-bottom: 10px solid rgb(255, 51, 51);
+}
+
+.grid-infographic-cell{
+    padding: 10px;
+}
+
+.grid-infographic-cell p{
+
+    padding: 10px 0;
+}
+
+.grid-infographic-one,
+.grid-infographic-five
+{
+    background-color: #ffc000;
+    border-bottom: 10px solid rgb(255, 51, 51);
+    font-weight: bold;
+}
+.grid-infographic-three,
+.grid-infographic-seven
+{
+    background-color: rgb(253, 145, 145);
+}
+.grid-infographic-five
+{
+    border-top: 10px solid rgb(255, 51, 51);
+    font-weight: normal;
+}
+@media (min-width: 600px) {
+    .grid-infographic{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 0;
+        grid-auto-rows: minmax(100px, auto);
+    }
+    .grid-infographic-one{
+        grid-column: 1/4;
+        grid-row: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .grid-infographic-five{
+        grid-column: 1/4;
+        grid-row: 3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}

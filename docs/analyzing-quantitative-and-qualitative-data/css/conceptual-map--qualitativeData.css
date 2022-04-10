@@ -1,0 +1,20 @@
+.conceptual-map--qualitativeData__ul--primary {
+  margin: 0 0 35px 10px;
+}
+.conceptual-map--qualitativeData__ul--secondary {
+  margin: 0 0 70px 40px;
+}
+.conceptual-map--qualitativeData h3 {
+  background-color: #a84b6a;
+  color: white;
+  padding: 10px;
+  position: relative;
+  top: -33px;
+  left: -28px;
+  width: 90%;
+  border-radius: 5px;
+}
+
+.conceptual-map--qualitativeData .conceptual-map-base__main-row {
+  background-color: #457ca1;
+}

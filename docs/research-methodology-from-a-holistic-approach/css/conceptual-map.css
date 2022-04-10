@@ -1,0 +1,139 @@
+   @keyframes handMove {
+    from {
+      opacity:1;
+      padding: 30px 0 0 0;
+    }
+  
+    to {
+        padding:  0 0  30px 0;
+        opacity: .5;
+    }
+  }
+
+  @keyframes tableConceptualAnimation {
+    from {
+      opacity:1;
+      border:5px solid rgb(68, 66, 231);
+      border-top-right-radius: 10%;
+      border-bottom-left-radius: 10%;
+    }
+  
+    to {
+        border:5px solid rgb(154, 153, 236);
+        opacity: .9;
+    }
+  }
+
+.conceptual-map{
+    background-color: aliceblue;
+    padding: 10px 0;
+}
+.conceptual-map .hand{
+    animation-duration: 1s;
+    animation-name: handMove;
+    animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.conceptual-map h3,
+.conceptual-map h4
+{
+    padding: 20px 0;
+}
+.conceptual-map p{
+    padding: 10px 0;
+}
+.conceptual-map .principal-box{
+    background-color: rgb(230, 230, 230);
+    border: 2px solid rgb(255, 230, 0);
+    padding: 20px;
+    margin: 0 20px;
+
+}
+
+.conceptual-map .popup-open-button{
+    text-align: center;
+
+}
+.conceptual-map .popup-box{
+    display: none;
+}
+.conceptual-map .popup-box.show{
+    display: block;
+}
+
+
+.conceptual-map .secondary-boxes-container{
+    padding: 0;
+    border-left: 7px solid rgb(255, 230, 0);
+    margin: 0 20px 0 40px;
+    overflow: hidden;
+}
+
+.conceptual-map .general-box{
+    border-top: 2px solid rgb(255, 230, 0);
+    padding: 20px;
+    margin:  0;
+}
+.conceptual-map .secondary-box{
+    background-color: rgb(230, 230, 230);
+    border: 2px solid rgb(255, 230, 0);
+    padding: 20px;
+    margin: 0 20px;
+    animation-duration: 1.5s;
+    animation-name: tableConceptualAnimation;
+    animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.conceptual-map .secondary-box:hover{
+    border:5px solid rgb(68, 66, 231);
+      border-top-right-radius: 40px;
+      border-bottom-left-radius: 40px;
+    padding: 20px;
+    margin: 0 20px;
+    animation-name:none;
+}
+.conceptual-map .secondary-box-container{
+    border-top: 7px solid rgb(255, 230, 0);
+   padding: 0;
+   margin: 20px 0;
+}
+.conceptual-map .secondary-box-content{
+    margin: 0 0 0 20px;
+    border-top: 0px solid;
+}
+.conceptual-map ul.logos li a{
+    display: block;
+    padding: 20px;
+}
+.conceptual-map ul.logos li a:hover,
+.conceptual-map ul.logos li a:focus
+{
+    border: 3px solid rgb(255, 230, 0);
+    
+}
+
+.conceptual-map ul.logos li a img{
+    max-width: 100%;
+    max-height: 100px;
+}
+
+
+@media (min-width: 700px) {
+    .conceptual-map .secondary-boxes-container{
+        display: flex;
+        padding: 0;
+    border-left: 0;
+    margin: 0;
+    }
+    .conceptual-map .secondary-box-container{
+        border-top: 0;
+       padding: 0;
+       margin: 20px 0;
+    }
+    .conceptual-map .secondary-box-content{
+        border-top: rgb(255, 230, 0) solid 2px;
+        margin: 0 20px;
+    }
+}
+
+

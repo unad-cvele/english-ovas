@@ -1,0 +1,109 @@
+@import "globales.scss";
+
+$circular-map-container-color-1:rgb(64, 77, 255);
+$circular-map-container-color-2:rgb(39, 190, 110);
+$circular-map-container-color-3:rgb(76, 149, 16);
+$circular-map-container-color-4:rgb(22, 163, 41);
+
+.circular-map{
+    &__container{
+        background-color: white;
+        border: border-solid-conceptual-maps($circular-map-container-color-1);
+        @include border-radius;
+        padding: 10px;
+        margin: 30px  0;
+        &-title{
+            background-color: $circular-map-container-color-1;
+            color: white;
+            padding: 10px;
+            margin: 10px 0;
+            position: relative;
+            top:-40px;
+            left:-20px;
+        }
+        &-2{
+            border: border-solid-conceptual-maps($circular-map-container-color-2);
+        }
+        &-2 &-title{
+            background-color: $circular-map-container-color-2;
+        }
+
+        &-3{
+            border: border-solid-conceptual-maps($circular-map-container-color-3);
+        }
+        &-3 &-title{
+            background-color: $circular-map-container-color-3;
+        }
+
+        &-4{
+            border: border-solid-conceptual-maps($circular-map-container-color-4);
+        }
+        &-4 &-title{
+            background-color: $circular-map-container-color-4;
+        }
+    }
+}
+
+@media (min-width: 1000px)  {
+
+    .circular-map{
+        &__row{
+            position: relative;
+            display: flex;
+            padding: 0 0 0 0 ;
+        }
+        &__container{
+            flex-grow: 1;
+            flex-basis: 0;
+            padding: 20px 20px 150px  20px;
+            margin: 30px  10px;
+            &-title{
+                position: absolute;
+                left: 50%;
+                margin: 0;
+                top: auto;
+                bottom: 0;
+                height: 180px;
+                width: 180px;
+            }
+            &-1 &-title{
+                left: calc(50% - 180px);
+                border-radius: 100% 0 0 0;
+                h3{
+                    margin: 100px 0 0 30px;
+                }
+            }
+     
+            &-2 &-title{
+                border-radius:  0 100% 0 0;
+                h3{
+                    margin: 100px 30px 0 0;
+                }
+            }
+            &-3,
+            &-4{
+                padding: 150px 20px 20px 20px;
+            }
+    
+            &-3 &-title{
+                top: 0;
+                bottom: auto;
+                border-radius:  0 0 0 100%;
+                left: calc(50% - 180px);
+                h3{
+                    margin: 20px 0 0 30px;
+                }
+            }
+    
+            &-4 &-title{
+                top: 0;
+                bottom: auto;
+                border-radius:  0 0 100% 0;
+                h3{
+                    margin: 20px 30px 0 0;
+                }
+            }
+        }
+    }
+
+}

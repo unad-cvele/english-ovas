@@ -1,0 +1,21 @@
+mixin docentes_descripcion(docentes_descripcion_nombre,docentes_descripcion_titulo)
+    .section-docentes_image-border
+        .section-docentes_image
+            img(src="http://drive.google.com/uc?export=view&id=1FwQsUfeRwX7Cq8BtmZuTq_jKmi1k7k_R", alt=docentes_descripcion_nombre)
+    h3 #{docentes_descripcion_nombre}
+    .section-docentes__titulos-docente
+        |#{docentes_descripcion_titulo}
+    .section-docentes__frase-docente
+        |Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam ad, culpa, eaque ea laborum possimus laboriosam mollitia neque molestias impedit quod repellat, dolores repellendus dolore officiis ducimus? Accusantium, doloremque corrupti!X
+    .section-general__button-show-more-container
+        a.section-general__button-show-more
+            |Ver más
+
+mixin docentes(docentes_nombre,docentes_titulo,docentes_startClass)
+    if docentes_startClass
+        .section-docentes__card.section-docentes__card--hide-right
+            +docentes_descripcion(docentes_nombre,docentes_titulo)
+    else 
+        .section-docentes__card
+            +docentes_descripcion(docentes_nombre,docentes_titulo)
+        

@@ -1,0 +1,31 @@
+@import "globales.scss";
+$conceptual-map--quantitativeData:#a84b6a;
+.conceptual-map--qualitativeData{
+    &__ul--primary{
+        margin: 0 0 35px 10px;
+    }
+    &__ul--secondary{
+        margin: 0 0 70px 40px;
+    }
+    h3{
+        background-color: #a84b6a;
+        color: white;
+        padding: 10px;
+        position: relative;
+        top: -33px;
+        left: -28px;
+        width: 90%;
+        border-radius: 5px;
+
+    }
+
+}
+
+.conceptual-map--qualitativeData .conceptual-map-base{
+   
+    &__main-row{
+        background-color: #457ca1;
+    }
+
+}
+

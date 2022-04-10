@@ -1,0 +1,6 @@
+@function border-solid-conceptual-maps($color){
+    @return $color solid 3px;
+}
+@mixin border-radius{
+    border-radius: 10px;
+}

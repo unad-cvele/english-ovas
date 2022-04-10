@@ -1,0 +1,80 @@
+.topics-choose{
+    background-color: rgb(98, 98, 160);
+    padding: 20px;
+}
+.topics-choose .choose-well-done{
+    width: 0;
+    height: 0;
+    opacity: 0;
+    transition: .3s;
+}
+.topics-choose .choose-well-done.show{
+    width: auto;
+    height: auto;
+    opacity: 1;
+}
+.topics-choose .choose-well-done  h3{
+    color: #f1fff3;
+    padding: 20px ;
+    text-align: center;
+}
+
+.topics-choose .pre-info{
+    background-color: rgb(246, 246, 246);
+    border: 3px solid rgb(124, 124, 163);
+    padding: 20px;
+    margin: 0 0 40px 0;
+}
+
+.topics-choose p{
+    padding: 10px 0;
+}
+.topics-choose .topics-to-select{
+    text-align: center;
+}
+.topics-choose .topics-to-select .topic,
+.topics-choose .topics-to-select .topic.danger{
+    background-color: rgb(73, 73, 73);
+    color: #fff;
+    padding: 20px;
+    font-size: 1rem;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
+}
+.topics-choose .topics-to-select .topic.danger{
+    background-color: rgb(192, 38, 38);
+}
+
+.topics-choose .topics-selected{
+    background-color: #fff;
+    border: darkolivegreen 3px dotted;
+    min-height: 100px;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+    -webkit-box-shadow: inset 10px 10px 25px -16px rgba(0,0,0,0.75);
+-moz-box-shadow: inset 10px 10px 25px -16px rgba(0,0,0,0.75);
+box-shadow: inset 10px 10px 25px -16px rgba(0,0,0,0.75);
+}
+
+.topics-choose .topics-selected .topic{
+    overflow: hidden;
+    height: 0;
+    width: 0;
+    transition: .5s;
+    display: inline-block;
+    opacity: 0;
+}
+
+.topics-choose .topics-selected .topic.show{
+    overflow: hidden;
+    height: auto;
+    width: auto;
+    opacity: 1;
+    background-color: #719671;
+    padding: 20px;
+    color: #fff;
+    margin: 10px;
+}

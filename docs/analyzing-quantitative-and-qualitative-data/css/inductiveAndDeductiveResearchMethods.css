@@ -1,0 +1,11 @@
+.inductiveAndDeductiveResearchMethods{
+    background-color: #f0cdb2;
+}
+
+.inductiveAndDeductiveResearchMethods h3{
+    background-color: var(--unad-orange);
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 0 4px 4px rgba(0,0,0,.2);
+    border-radius: 5px;
+}

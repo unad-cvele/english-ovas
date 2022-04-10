@@ -1,0 +1,55 @@
+
+@import "globales.scss";
+$conceptual-map-base__line-color:rgb(49, 217, 223);
+
+.conceptual-map-base{
+   
+    &__main-row{
+        background-color: rgb(75, 77, 168);
+        color: #fff;
+        font-weight: bold;
+        margin: 20px 0 0 0;
+        padding: 20px;
+        @include border-radius;
+        &-2{
+            background-color: rgb(57, 168, 38);
+        }
+    }
+    &__ul{
+        border-left:  border-solid-conceptual-maps($conceptual-map-base__line-color);
+        padding: 0 0 0 0;
+        margin: 0 0 70px 10px;
+        
+    }
+    li{
+        
+        padding: 0 0 0 10px;
+        list-style: none;
+        margin: 0 0 20px 0;
+        position: relative;
+        
+    }
+    li::before{
+        content: "";
+        background-color: $conceptual-map-base__line-color;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 3px;
+        width: 10px;
+    }
+    &__secondary-row{
+        position: relative;
+        top:35px;
+        border: border-solid-conceptual-maps($conceptual-map-base__line-color);
+        background-color: #efefef;
+        padding: 20px;
+        @include border-radius;
+    }
+
+    &__ul_default li{
+        position:static;
+        list-style:circle;
+    }
+       
+}

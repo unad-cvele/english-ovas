@@ -1,0 +1,9 @@
+@media (min-width: 1000px) {
+  .conceptual-map-v2__main-container {
+    display: flex;
+  }
+
+  .conceptual-map-v2 {
+    padding: 0 20px;
+  }
+}

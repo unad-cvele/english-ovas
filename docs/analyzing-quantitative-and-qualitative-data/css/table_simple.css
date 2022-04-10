@@ -1,0 +1,32 @@
+.table_simple {
+  background-color: #EFEBCF;
+  padding: 20px;
+}
+.table_simple__imagen {
+  border: dotted 2px #72af9a;
+  padding: 20px;
+  text-align: center;
+  margin: 10px;
+}
+.table_simple__imagen img {
+  height: 360px;
+}
+.table_simple__descripcion {
+  border: dotted 2px #72af9a;
+  color: #333;
+  line-height: 1.6rem;
+  padding: 20px;
+  margin: 10px;
+}
+
+@media (min-width: 1000px) {
+  .table_simple {
+    display: flex;
+  }
+  .table_simple__imagen {
+    width: 50%;
+  }
+  .table_simple__descripcion {
+    width: 50%;
+  }
+}

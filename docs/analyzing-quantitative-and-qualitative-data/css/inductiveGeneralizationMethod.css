@@ -1,0 +1,21 @@
+.inductiveGeneralizationMethod{
+    background-color: var(--unad-one);
+
+}
+
+.inductiveGeneralizationMethod h3{
+    color: var(--unad-two);
+    text-align: center;
+}
+
+.inductiveGeneralizationMethod .container-acordeon{
+    
+    border: 1px solid var(--unad-yellow);
+}
+
+.inductiveGeneralizationMethod .container-acordeon.show{
+    border-left: 5px dotted  var(--unad-yellow);
+}
+.inductiveGeneralizationMethod .btn-acordeon{
+    color:var(--unad-two); ;
+}
