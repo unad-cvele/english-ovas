@@ -10,7 +10,7 @@ class inglesClass_examplesOfResearchObjectives extends generalPage{
   content(){
       return `
       <div class="header-h2"><h2>Examples of research objectives</h2></div>
-      <video class="responsive" src="./images/examplesOfResearchObjectives.mp4" controls="" controlslist="nodownload"></video>
+      <iframe class="iframe-video-principal" src="https://www.youtube.com/embed/iuboRVNX2J0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       <div class="text-general">
         <p>Look at the following video to learn more about how to write correctly research objectives.</p>
       </div>
