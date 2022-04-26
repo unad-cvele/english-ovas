@@ -10,7 +10,7 @@ class inglesClass_typesOfresearch extends generalPage{
   content(){
       return `
       <div class="header-h2"><h2>Types of research</h2></div>
-      <video class="responsive" src="./images/Video3-F.mp4" controls="" controlslist="nodownload"></video>
+      <iframe class="iframe-video-principal" src="https://www.youtube.com/embed/3bptYhZyK1Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       <div class="text-center">
         <button class="btn-general btn-back" onclick="stages_ingles.menu.back()">Back</button>
         <button class="btn-general btn-next" onclick="stages_ingles.menu.next()">Next</button>
