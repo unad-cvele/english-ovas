@@ -10,7 +10,7 @@ class inglesClass_samplingInResearch extends generalPage{
   content(){
       return `
       <div class="header-h2"><h2>Sampling in Research</h2></div>
-      <video class="responsive" src="./images/samplingInResearch.mp4" controls="" controlslist="nodownload"></video>
+      <iframe class="iframe-video-principal" src="https://www.youtube.com/embed/yZBzVZ5wvRw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       <div class="text-general">
           <p>En espera de la información y el video</p>
           
